@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
  */
 public class Problem1 {
 
-	public static int generateSum(int max) {
+	public static int apply(int max) {
 		int sum = 0;
 		for (int i = 1; i < max; i++) {
 			if ((i % 3 == 0) || (i % 5 == 0)) {
@@ -22,7 +22,7 @@ public class Problem1 {
 		return sum;
 	}
 
-	public static int generateSum2(int max) {
+	public static int apply2(int max) {
 		return IntStream.range(1, max).filter(i -> ((i % 3 == 0) || (i % 5 == 0))).sum();
 	}
 
